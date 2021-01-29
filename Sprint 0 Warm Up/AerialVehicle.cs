@@ -12,21 +12,22 @@ namespace Sprint_0_Warm_Up
         public AerialVehicle()
         {
             IsFlying = false;
+            this.Engine = new Engine();
         }
 
         public string About()
         {
             string message = "";
 
-            message += $"This OOPFlyingVehicle.Airplane has a max altitude of {MaxAltitude} ft.";
-            message += $"It's current altitude is {CurrentAltitude} ft.";
+            message += $"\nThis OOPFlyingVehicle.Airplane has a max altitude of {MaxAltitude} ft.";
+            message += $"\nIt's current altitude is {CurrentAltitude} ft.";
 
             if (Engine.isStarted)
             {
-                message += "OOPFlyingVehicleMidterm.Airplane engine has been started";
+                message += "\nOOPFlyingVehicleMidterm.Airplane engine has been started";
             } else
             {
-                message += "OOPFlyingVehicleMidterm.Airplane engine is not started";
+                message += "\nOOPFlyingVehicleMidterm.Airplane engine is not started";
             }
 
             return message;
