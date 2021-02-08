@@ -24,7 +24,12 @@ namespace Sprint_0_Warm_Up
 
         public string AllTakeOff()
         {
-            return "";
+            foreach (AerialVehicle a in Vehicles)
+            {
+                TakeOff(a);
+            }
+            
+            return "All of the vehicles have taken off";
         }
 
         public string Land(AerialVehicle a)
@@ -37,7 +42,7 @@ namespace Sprint_0_Warm_Up
                 Vehicles.Add(a);
             }
 
-            return "";
+            return "An aerial vehicle has landed";
         }
 
         public string Land(List<AerialVehicle> landing)
@@ -46,14 +51,14 @@ namespace Sprint_0_Warm_Up
             {
                 Land(a);
             }
-            return "";
+            return "All of the vehicles have landed";
         }
 
         public string TakeOff(AerialVehicle a)
         {
             a.StartEngine();
             a.TakeOff();
-            return "";
+            return "An aerial vehicle has taken off";
         }
     }
 }

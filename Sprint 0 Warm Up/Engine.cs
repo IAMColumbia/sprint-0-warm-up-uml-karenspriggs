@@ -11,7 +11,18 @@
 
         public string About()
         {
-            return "";
+            string message = "";
+
+            if (isStarted)
+            {
+                message = "This engine has been started";
+            }
+            else
+            {
+                message = "This engine has not been started";
+            }
+
+            return message;
         }
         
         public void Start()
