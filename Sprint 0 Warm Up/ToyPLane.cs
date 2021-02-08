@@ -6,12 +6,13 @@ namespace Sprint_0_Warm_Up
 {
     class ToyPlane : Airplane
     {
-        public bool isWoundUP;
+        private bool isWoundUP;
 
         public ToyPlane()
         {
-            MaxAltitude = 50;
+            this.MaxAltitude = 50;
             isWoundUP = false;
+            Engine.isStarted = false;
         }
 
         public string getWindUpString()
@@ -29,15 +30,16 @@ namespace Sprint_0_Warm_Up
             isWoundUP = false;
         }
 
-        public void StartEngine()
+        public override void StartEngine()
         {
             if (isWoundUP)
             {
-                //Engine.isStarted = true;
+                CurrentAltitude = 0;
+                Engine.isStarted = true;
             }
         }
 
-        public string TakeOff()
+        public override string TakeOff()
         {
             string message;
 
