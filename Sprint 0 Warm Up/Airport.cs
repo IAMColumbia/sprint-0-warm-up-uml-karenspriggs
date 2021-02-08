@@ -31,7 +31,11 @@ namespace Sprint_0_Warm_Up
         {
             a.FlyDown(a.CurrentAltitude);
             a.IsFlying = false;
-            Vehicles.Add(a);
+
+            if (Vehicles.Count < MaxVehicles)
+            {
+                Vehicles.Add(a);
+            }
 
             return "";
         }
