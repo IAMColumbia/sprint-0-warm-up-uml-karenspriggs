@@ -29,16 +29,26 @@ namespace Sprint_0_Warm_Up
 
         public string Land(AerialVehicle a)
         {
+            a.FlyDown(a.CurrentAltitude);
+            a.IsFlying = false;
+            Vehicles.Add(a);
+
             return "";
         }
 
         public string Land(List<AerialVehicle> landing)
         {
+            foreach (AerialVehicle a in landing)
+            {
+                Land(a);
+            }
             return "";
         }
 
         public string TakeOff(AerialVehicle a)
         {
+            a.StartEngine();
+            a.TakeOff();
             return "";
         }
     }
