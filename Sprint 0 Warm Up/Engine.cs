@@ -11,7 +11,7 @@
 
         public string About()
         {
-            string message = "";
+            string message;
 
             if (isStarted)
             {

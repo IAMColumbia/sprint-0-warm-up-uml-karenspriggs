@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Sprint_0_Warm_Up;
 
 namespace Sprint1Tests
 {
@@ -9,19 +10,26 @@ namespace Sprint1Tests
     class ToyPlaneTests
     {
         [TestMethod]
+        public void AboutTest()
+        {
+            //ToyPlane tp = new ToyPLane();
+            //Assert.AreEqual();
+        }
+
+        [TestMethod]
+        public void TakeOffTest()
+        {
+
+        }
+
+        [TestMethod]
         public void FlyUpTest()
         {
 
         }
 
         [TestMethod]
-        public void AboutTest()
-        {
-
-        }
-
-        [TestMethod]
-        public void TakeOffTest()
+        public void FlyDownTest()
         {
 
         }
