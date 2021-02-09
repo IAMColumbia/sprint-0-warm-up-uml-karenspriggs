@@ -36,12 +36,14 @@ namespace Sprint_0_Warm_Up
 
         public string Land(AerialVehicle a)
         {
-            a.FlyDown(a.CurrentAltitude);
-            a.IsFlying = false;
-
             if (Vehicles.Count < MaxVehicles)
             {
+                a.FlyDown(a.CurrentAltitude);
+                a.IsFlying = false;
                 Vehicles.Add(a);
+            } else
+            {
+                return "The airport is full so the vehicle could not land";
             }
 
             return "An aerial vehicle has landed";
@@ -60,6 +62,7 @@ namespace Sprint_0_Warm_Up
         {
             a.StartEngine();
             a.TakeOff();
+           Vehicles.Remove(a);
             return "An aerial vehicle has taken off";
         }
     }
