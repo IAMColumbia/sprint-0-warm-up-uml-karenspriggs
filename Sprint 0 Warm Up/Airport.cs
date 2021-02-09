@@ -14,12 +14,14 @@ namespace Sprint_0_Warm_Up
         public Airport(string code)
         {
             AirportCode = code;
+            Vehicles = new List<AerialVehicle>();
         }
 
         public Airport(string code, int MaxVehicles)
         {
             AirportCode = code;
             this.MaxVehicles = MaxVehicles;
+            Vehicles = new List<AerialVehicle>();
         }
 
         public string AllTakeOff()
