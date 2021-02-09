@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sprint 0 Warm Up", "Sprint 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProjectAV", "UnitTestProjectAV\UnitTestProjectAV.csproj", "{E1D4E5B1-8F90-4963-B64F-1B8AA45F0160}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sprint1Tests", "Sprint1Tests\Sprint1Tests.csproj", "{573887A1-0CC2-4F5B-9510-03FBB3E7DE7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{E1D4E5B1-8F90-4963-B64F-1B8AA45F0160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E1D4E5B1-8F90-4963-B64F-1B8AA45F0160}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1D4E5B1-8F90-4963-B64F-1B8AA45F0160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{573887A1-0CC2-4F5B-9510-03FBB3E7DE7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{573887A1-0CC2-4F5B-9510-03FBB3E7DE7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{573887A1-0CC2-4F5B-9510-03FBB3E7DE7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{573887A1-0CC2-4F5B-9510-03FBB3E7DE7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

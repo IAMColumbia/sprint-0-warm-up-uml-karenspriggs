@@ -19,15 +19,15 @@ namespace Sprint_0_Warm_Up
         {
             string message = "";
 
-            message += $"\nThis OOPFlyingVehicle.Airplane has a max altitude of {MaxAltitude} ft.";
+            message += $"\nThis {this.ToString()} has a max altitude of {MaxAltitude} ft.";
             message += $"\nIt's current altitude is {CurrentAltitude} ft.";
 
             if (Engine.isStarted)
             {
-                message += "\nOOPFlyingVehicleMidterm.Airplane engine has been started";
+                message += $"\n{this.ToString()} engine has been started";
             } else
             {
-                message += "\nOOPFlyingVehicleMidterm.Airplane engine is not started";
+                message += $"\n{this.ToString()} engine is not started";
             }
 
             return message;
@@ -38,10 +38,10 @@ namespace Sprint_0_Warm_Up
             string message;
             if (!Engine.isStarted)
             {
-                message = "OOPFlyingVehicleMidterm.Airplane can't fly it's engine is not started.";
+                message = $"This {this.ToString()} can't fly it's engine is not started.";
             } else
             {
-                message = "OOPFlyingVehicleMidterm.Airplane is flying";
+                message = $"This {this.ToString()} is flying";
                 CurrentAltitude = 0;
                 IsFlying = true;
             }

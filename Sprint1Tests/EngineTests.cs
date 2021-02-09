@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace Sprint1Tests
+{
+    [TestClass]
+    class EngineTests
+    {
+        [TestMethod]
+        public void WindUpTest()
+        {
+
+        }
+    }
+}
