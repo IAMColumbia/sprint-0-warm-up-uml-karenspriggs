@@ -4,11 +4,11 @@ using System.Text;
 
 namespace Sprint_0_Warm_Up
 {
-    public class Airplane : AerialVehicle
+    public class Helicopter : AerialVehicle
     {
-        public Airplane()
+        public Helicopter()
         {
-            MaxAltitude = 41000;
+            base.MaxAltitude = 8000;
         }
     }
 }
