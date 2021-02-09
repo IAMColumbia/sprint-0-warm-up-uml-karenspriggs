@@ -24,10 +24,10 @@ namespace Sprint_0_Warm_Up
 
             if (Engine.isStarted)
             {
-                message += $"\n{this.ToString()} engine has been started";
+                message += $"\nThis {this.ToString()}'s engine has been started";
             } else
             {
-                message += $"\n{this.ToString()} engine is not started";
+                message += $"\nThis {this.ToString()}'s engine is not started";
             }
 
             return message;
@@ -60,7 +60,7 @@ namespace Sprint_0_Warm_Up
 
             if (CurrentAltitude - defaultHeight >= 0)
             {
-                CurrentAltitude -= defaultHeight;
+                FlyDown(defaultHeight);
             }
         }
 
@@ -74,17 +74,17 @@ namespace Sprint_0_Warm_Up
             }
         }
 
-        internal void FlyUp()
+        public void FlyUp()
         {
             int defaultHeight = 1000;
 
             if (CurrentAltitude + defaultHeight < MaxAltitude)
             {
-                CurrentAltitude += defaultHeight;
+                FlyUp(defaultHeight);
             }
         }
 
-        internal void FlyUp(int HowMuch)
+        public void FlyUp(int HowMuch)
         {
             int newHeight = HowMuch + CurrentAltitude;
 

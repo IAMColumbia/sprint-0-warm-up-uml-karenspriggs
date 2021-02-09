@@ -9,10 +9,11 @@ namespace Sprint1Tests
     [TestClass]
     class ToyPlaneTests
     {
+        //ToyPlane tp = new ToyPLane();
+
         [TestMethod]
         public void AboutTest()
         {
-            //ToyPlane tp = new ToyPLane();
             //Assert.AreEqual();
         }
 
