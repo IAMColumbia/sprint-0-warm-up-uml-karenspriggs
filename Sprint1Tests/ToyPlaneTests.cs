@@ -8,5 +8,22 @@ namespace Sprint1Tests
     [TestClass]
     class ToyPlaneTests
     {
+        [TestMethod]
+        public void FlyUpTest()
+        {
+
+        }
+
+        [TestMethod]
+        public void AboutTest()
+        {
+
+        }
+
+        [TestMethod]
+        public void TakeOffTest()
+        {
+
+        }
     }
 }

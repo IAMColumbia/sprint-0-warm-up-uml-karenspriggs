@@ -45,10 +45,10 @@ namespace Sprint_0_Warm_Up
 
             if (isWoundUP)
             {
-                message = "OOPFlyingVehicleMidterm.ToyPlane is flying";
+                message = $"This {this.ToString()} is flying";
             } else
             {
-                message = "OOPFlyingVehicleMidterm.ToyPlane can't fly it's engine is not started.";
+                message = $"This {this.ToString()} can't fly it's engine is not started.";
             }
             return message;
         }
