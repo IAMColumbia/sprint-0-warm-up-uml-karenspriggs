@@ -17,7 +17,17 @@ namespace Sprint_0_Warm_Up
 
         public string getWindUpString()
         {
-            return "";
+            string message = "";
+
+            if (isWoundUP)
+            {
+                message = $"This {this.ToString()} has been wound up";
+            } else
+            {
+                message = $"This {this.ToString()} has not been wound up";
+            }
+
+            return message;
         }
 
         public void WindUp()
@@ -43,7 +53,7 @@ namespace Sprint_0_Warm_Up
         {
             string message;
 
-            if (isWoundUP)
+            if (Engine.isStarted)
             {
                 message = $"This {this.ToString()} is flying";
             } else
